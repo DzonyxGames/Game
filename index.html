@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#050706">
+<meta name="description" content="Dzonyx Games — creators of HEARTHLINE, a first-person industrial horror game.">
+<title>Dzonyx Games — HEARTHLINE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div><div class="cursor-glow" id="cursorGlow"></div>
+<header class="topbar">
+<a href="#home" class="brand"><span class="brand-mark">D</span><span class="brand-text">DZONYX <b>GAMES</b></span></a>
+<nav class="nav"><a href="#game">Game</a><a href="#trailer">Trailer</a><a href="#gallery">Gallery</a><a href="#studio">Studio</a></nav>
+<a class="btn btn-small" id="steamTop" href="#">Wishlist on Steam</a>
+</header>
+<main>
+<section id="home" class="hero"><div class="hero-bg"></div><div class="hero-grid"></div>
+<div class="hero-content reveal"><p class="eyebrow">DZONYX GAMES PRESENTS</p><h1>HEARTHLINE</h1><p class="subtitle">CHAPTER ONE: <span>THE APPLICANT</span></p>
+<p class="lead">A night job. An abandoned factory. A house that was waiting for you.</p>
+<div class="hero-actions"><a class="btn" href="#trailer">Watch Trailer</a><a class="btn btn-ghost" id="steamHero" href="#">Wishlist on Steam</a></div></div>
+<div class="hero-status reveal"><span class="pulse"></span><span>PROJECT STATUS</span><b>IN DEVELOPMENT</b></div><div class="scroll-indicator"><span>SCROLL</span><i></i></div></section>
+
+<section id="game" class="section game-section"><div class="section-label">01 / THE GAME</div><div class="two-col">
+<div class="reveal"><p class="eyebrow">FIRST-PERSON INDUSTRIAL HORROR</p><h2>The factory remembers.</h2></div>
+<div class="copy reveal"><p>You play as <strong>Daniel Rook</strong>, an electrician who accepts a suspicious overnight maintenance job at the abandoned Hearthline Toyworks facility.</p><p>After a violent storm blocks the road, Daniel is forced to continue on foot. Inside the factory grounds stands an old wooden house that should not exist.</p><p>Restore power, solve environmental puzzles, uncover hidden observation areas and survive <strong>MINDER</strong> — the mechanical caretaker that still believes the evaluation is running.</p></div></div>
+<div class="feature-grid">
+<article class="feature reveal"><span>01</span><h3>Atmospheric Horror</h3><p>Slow-burn tension, industrial ambience and dynamic horror events.</p></article>
+<article class="feature reveal"><span>02</span><h3>Environmental Puzzles</h3><p>Restore power, trace circuits and use the Linekey to unlock the facility.</p></article>
+<article class="feature reveal"><span>03</span><h3>MINDER</h3><p>Hide, run and survive encounters with the factory's mechanical caretaker.</p></article>
+<article class="feature reveal"><span>04</span><h3>Hidden History</h3><p>Discover why Hearthline knows Daniel — and why it remembers what he cannot.</p></article></div></section>
+
+<section id="trailer" class="section trailer-section"><div class="section-label">02 / TRAILER</div><div class="trailer-heading reveal"><div><p class="eyebrow">CONCEPT TEASER</p><h2>Enter Hearthline.</h2></div><p class="muted">Current concept teaser. Gameplay trailer coming later.</p></div>
+<div class="video-frame reveal"><video controls preload="metadata"><source src="assets/hearthline-concept-teaser.mp4" type="video/mp4">Your browser does not support HTML5 video.</video><div class="video-corner tl"></div><div class="video-corner tr"></div><div class="video-corner bl"></div><div class="video-corner br"></div></div></section>
+
+<section id="gallery" class="section gallery-section"><div class="section-label">03 / GALLERY</div><div class="gallery-head reveal"><div><p class="eyebrow">GAMEPLAY & ENVIRONMENTS</p><h2>Inside the facility.</h2></div><p class="muted">Replace these placeholders with your real 16:9 gameplay screenshots.</p></div>
+<div class="gallery-grid"><button class="shot shot-1 reveal" data-shot="Storm Road"><span>STORM ROAD</span><small>Gameplay screenshot</small></button><button class="shot shot-2 reveal" data-shot="The House"><span>THE HOUSE</span><small>Gameplay screenshot</small></button><button class="shot shot-3 reveal" data-shot="MINDER"><span>MINDER</span><small>Gameplay screenshot</small></button><button class="shot shot-4 reveal" data-shot="Electrical Puzzle"><span>LINEKEY</span><small>Gameplay screenshot</small></button><button class="shot shot-5 reveal" data-shot="Factory"><span>THE FACTORY</span><small>Gameplay screenshot</small></button><button class="shot shot-6 reveal" data-shot="Exit"><span>EXIT</span><small>Gameplay screenshot</small></button></div></section>
+
+<section class="quote-section"><div class="scan"></div><div class="quote reveal"><span>RECALL THREAD // ARCHIVE 004</span><blockquote>“Your evaluation has already begun.”</blockquote></div></section>
+<section id="studio" class="section studio-section"><div class="section-label">04 / STUDIO</div><div class="two-col"><div class="reveal"><p class="eyebrow">INDEPENDENT GAME STUDIO</p><h2>Dzonyx Games</h2></div><div class="copy reveal"><p>Dzonyx Games is an independent game studio focused on atmospheric horror, mystery, environmental storytelling and memorable gameplay moments.</p><p>HEARTHLINE is currently in development for PC.</p><div class="studio-actions"><a class="btn btn-ghost" id="discordBtn" href="#">Discord</a><a class="text-link" id="contactBtn" href="#">Contact</a></div></div></div></section>
+<section class="cta-section"><div class="cta-inner reveal"><p class="eyebrow">THE EVALUATION IS WAITING</p><h2>Wishlist HEARTHLINE</h2><p>Follow development and be there when the doors open.</p><a class="btn" id="steamBottom" href="#">Wishlist on Steam</a></div></section>
+</main>
+<footer><div><b>DZONYX GAMES</b><span>© <span id="year"></span> Dzonyx Games. All rights reserved.</span></div><div class="footer-right"><span>HEARTHLINE</span><span>PC / IN DEVELOPMENT</span></div></footer>
+<div class="modal" id="shotModal"><button class="modal-close" id="modalClose">×</button><div class="modal-card"><p class="eyebrow">SCREENSHOT PLACEHOLDER</p><h3 id="modalTitle">Gameplay Screenshot</h3><p>Replace this card with the real image when you have final gameplay screenshots.</p></div></div>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
